@@ -15,7 +15,7 @@ This project demonstrates how to manually set up a Kubernetes (K8s) cluster from
   vagrant up
 
 ### 2. Update System and Install Required Packages
-- Run "script.sh" script on all nodes to complete steps 1 to 4
+- Alternatively, run "script.sh" on all nodes to complete steps 2 to 4.
   
   ```bash
   sudo -i
