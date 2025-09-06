@@ -115,7 +115,7 @@ This project demonstrates how to manually set up a Kubernetes (K8s) cluster from
   sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
 ### 6. Join Worker Nodes
-- Use the join command generated from step 6 on each worker node in the cluster
+- Use the join command generated from step 5 on each worker node in the cluster
   ```bash
   sudo kubeadm join 10.0.0.10:6443 --token 56zoor.0owcsp9qtb2shsf3 \ --discovery-token-ca-cert-hash sha256:23c1b5bab2e09d06c86ac1935f7c0922bbf129eedb109e6ee3bb585d19a8ee3c
 - Replace <10.0.0.10> with the actual IP of master1 node.
