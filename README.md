@@ -102,7 +102,7 @@ This project demonstrates how to manually set up a Kubernetes (K8s) cluster from
   sudo sed -i '/^net.ipv4.ip_forward=/{h;s/=.*/=1/};${x;/^$/{s//net.ipv4.ip_forward=1/;H};x}' /etc/sysctl.conf
   sudo sysctl -p
 
-### 5. Initiate Kubeadm control plane configuration on the master node.
+### 5. Initiate Kubeadm Control Plane Configuration on the Master Node.
 - Best practice: Use a load balancer IP for high availability. In this project the IP of master1 node will be used as the primary master node for the cluster.
   ```bash
   sudo kubeadm init --control-plane-endpoint "10.0.0.10:6443"
