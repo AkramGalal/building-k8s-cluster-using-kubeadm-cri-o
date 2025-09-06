@@ -106,7 +106,7 @@ This project demonstrates how to manually set up a Kubernetes (K8s) cluster from
 - Best practice: Use a load balancer IP for high availability. In this project the IP of master1 node will be used as the primary master node for the cluster.
   ```bash
   sudo kubeadm init --control-plane-endpoint "10.0.0.10:6443"
-- eplace <10.0.0.10> with the actual IP of master1 node.
+- Replace <10.0.0.10> with the IP of master1 node.
 
 - Set up K8s configuration for the current user
   ```bash
