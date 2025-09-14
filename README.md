@@ -135,6 +135,15 @@ This project demonstrates how to manually set up a Kubernetes (K8s) cluster from
   kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 
 ### 9. Validate Cluster  
+- To enable autocompletion in K8s
+  ```bash
+  sudo apt install bash-completion -y
+  echo "source <(kubectl completion bash)" >> ~/.bashrc source ~/.bashrc
+  
 - Verify that all master and worker nodes are in Ready state.
   ```bash
   kubectl get nodes -o wide
+
+<img width="2280" height="276" alt="Screenshot 2025-09-14 184320" src="https://github.com/user-attachments/assets/85a06484-620e-4258-a315-c193ffb1666e" />
+
+
